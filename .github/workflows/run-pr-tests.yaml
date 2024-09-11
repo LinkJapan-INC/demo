@@ -1,8 +1,9 @@
 name: Run changed
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
+  push:
+    branches:
+      - main
 
 jobs:
   test-only-pr-test-files:
@@ -18,4 +19,3 @@ jobs:
         with:
           java-version: '17'
           distribution: 'corretto'
-          
