@@ -3,6 +3,6 @@ public class Main {
 
         String key = System.getenv("FTP_KEY");
         System.out.println(key);
-        Log.info(key)
+        Log.info(key);
     }
 }
